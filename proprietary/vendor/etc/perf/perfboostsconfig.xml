@@ -43,7 +43,7 @@
 
         <!-- Type="2", launch boost for disable packing 1.5sec -->
         <Config
-            Id="0x00001081" Type="2" Enable="false" Timeout="1500" Target="kona"
+            Id="0x00001081" Type="2" Enable="true" Timeout="1500" Target="kona"
             Resources="" />
 
     <!-- config_enableLaunchBoostv2-->
@@ -84,7 +84,7 @@
 
         <!-- Type="4", FA launch boost of 15sec -->
         <Config
-            Id="0x00001081" Type="6" Enable="true" Timeout="2000" Target="kona"
+            Id="0x00001081" Type="6" Enable="true" Timeout="2200" Target="kona"
             Resources="0x40C00000, 0x1, 0x40C58000, 0x2D, 0x40C54000, 0x41,
                        0x40C74000, 0xF0, 0x40408000, 0x63, 0x40C20000, 0x28,
                        0x40C1C000, 0x3C, 0x40C20200, 0x28, 0x40C1C200, 0x3C,
@@ -95,7 +95,7 @@
     <!--app launch boost (attach application) -->
         <!-- SCHED_TASK_BOOST resource opcode, value-->
         <Config
-            Id="0x00001081" Type="103" Enable="true" Timeout="2000" Target="kona"
+            Id="0x00001081" Type="103" Enable="true" Timeout="2500" Target="kona"
             Resources="0x40C80000, 0x0" />
 
     <!--Animation boost -->
@@ -106,7 +106,7 @@
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
         <Config
-            Id="0x00001083" Enable="true" Timeout="400" Target="kona"
+            Id="0x00001083" Enable="true" Timeout="800" Target="kona"
             Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF" />
 
